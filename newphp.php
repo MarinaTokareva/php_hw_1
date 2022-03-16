@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>корзина с товарами</title>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </head>
-    <header>
+
         <?php
             include 'header.php';
         ?>
-    </header>
     <body>
         <hr>
         <div class="card-group">
@@ -21,7 +10,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Название карточки</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                    <a href="#" class="btn btn-primary">Добавить в корзину</a>
+                    <span class="mr-1">price</span> <br><br>
+                    <div class="qty ">
+                        <input type="number" class="count" name="qty" value="1">
+                    </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -29,7 +22,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Название карточки</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                    <a href="#" class="btn btn-primary">Добавить в корзину</a> <span class="mr-1">price</span> <br><br>
+                    <div class="qty ">
+                        <input type="number" class="count" name="qty" value="1">
+                    </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -37,7 +33,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Название карточки</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                    <a href="#" class="btn btn-primary">Добавить в корзину</a> <span class="mr-1">price</span> <br><br>
+                    <div class="qty ">
+                        <input type="number" class="count" name="qty" value="1">
+                    </div>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -45,15 +44,21 @@
                 <div class="card-body">
                     <h5 class="card-title">Название карточки</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                    <a href="#" class="btn btn-primary">Добавить в корзину</a> <span class="mr-1">price</span> <br><br>
+                    <div class="qty ">
+                        <input type="number" class="count" name="qty" value="1">
+                    </div>
                 </div>
             </div>
         </div>
+<?php
+  
+    var_dump($_COOKIE);
+
+?>
         <hr>
     </body>
-    <footer>
         <?php
         include 'footer.php';
         ?>
-    </footer>
-</html>
+
