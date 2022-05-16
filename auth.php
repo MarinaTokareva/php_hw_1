@@ -14,14 +14,19 @@
         $user = [];
         $user['login'] = ($_POST['user_login']);
         $user['password'] = ($_POST['user_password']);
-        var_dump($user);
+        //var_dump($user);
         if(($user['login'] == $admin['login']) && ($user['password'] == $admin['password'])){
             $_SESSION['user'] = $user; 
         }
+    }else if($_POST['user_logout']){
+        unset($_SESSION['user']);
+        session_destroy();
     }
     if($_SESSION['user']){ 
         //авторизовались
-        echo "Hello, " . $_SESSION['user']['login'];
+        require_once 'newphp.php';
+        //echo "Hello, " . $_SESSION['user']['login'];
+
     }else{
         //форма авторизации
         ?>
@@ -32,8 +37,8 @@
             </form>
         <?php
     }
-    var_dump($_SESSION);
-    var_dump($_POST);
+    // var_dump($_SESSION);
+    // var_dump($_POST);
 
 ?>
 

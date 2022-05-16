@@ -39,6 +39,11 @@
                 <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
                 </li>
+                <li class="nav-item">
+                    <form action="#" method="post" >
+                        <input class="btn btn-outline-warning" type="submit" value="Logout" name="user_logout">
+                    </form>
+                </li>
             </ul>
             <form class="d-flex">
                 <a class="nav-link active" aria-current="page" href="basket.php">Basket</a>
